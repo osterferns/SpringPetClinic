@@ -2,7 +2,7 @@ pipeline{
     agent{label 'master'}
     tools{maven 'M3'}
     stages{
-        steps('Checkout'){
+        stage('Checkout'){
             steps{
                 git branch: 'main' , url: 'https://github.com/osterferns/SpringPetClinic.git'
             }
